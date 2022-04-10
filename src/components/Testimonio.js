@@ -1,15 +1,17 @@
+import '../stylesheets/Testimonio.css'
+
 const Testimonio = (props) => {
   return (
     <div className='contenedor-testimonio'>
       <img
         className='imagen-testimonio'
-        src={require('../images/testimonio-emma.png')}
-        alt="imagen de Emma" />
-        <div className='contenedor-texto-testimonio'>
-          <p className='nombre-testimonio'>Emma Bostian en Suecia</p>
-          <p className='cargo-testimonio'>Ingeniera de Software en Spotify</p>
-          <p className='texto-testimonio'></p>
-        </div>
+        src={require(`../images/testimonio-${props.imagen}.png`)}
+        alt='imagen' />
+      <div className='contenedor-texto-testimonio'>
+        <p className='nombre-testimonio'><strong>{props.nombre}</strong> en {props.pais}</p>
+        <p className='cargo-testimonio'>{props.cargo} en <strong>{props.empresa}</strong></p>
+        <p className='texto-testimonio'>'{props.texto}'</p>
+      </div>
     </div>
   );
 }
