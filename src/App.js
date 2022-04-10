@@ -1,11 +1,11 @@
 import './App.css';
-import Saludo from "./Saludo";
+import Testimonio from './components/Testimonio'
 
-const App = () => {
+function App() {
   return (
-    <>
-    <Saludo nombre = "Brian"/>
-    </>
+    <div className="App">
+      <Testimonio/>
+    </div>
   );
 }
 
