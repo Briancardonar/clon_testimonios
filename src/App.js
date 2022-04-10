@@ -1,9 +1,10 @@
 import './App.css';
+import Saludo from "./Saludo";
 
-function App() {
+const App = () => {
   return (
     <>
-    <p>brian</p>
+    <Saludo nombre = "Brian"/>
     </>
   );
 }
